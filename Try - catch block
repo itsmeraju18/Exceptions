@@ -1,0 +1,34 @@
+// c# Exception handling using try - catch blocks
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace exception_handling_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            try
+            {
+                Console.WriteLine("Enter a number: ");
+
+                var num = int.parse(Console.ReadLine());
+
+                Console.WriteLine($"Squre of {num} is {num * num}");
+            }
+            ccatch (Exception ex)
+            {
+                Console.Write("Error info:" + ex.Message);
+            }
+            finally
+            {
+                Console.Write("Re-try with a different number.");
+            }
+        }
+
+    }
+}
